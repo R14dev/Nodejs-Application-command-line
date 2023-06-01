@@ -1,0 +1,24 @@
+{
+  "name": "internacionalizaion-command-line-aplication",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "npx nodemon --experimental-json-modules --exec node src/index.js",
+    "test": "npx mocha -w --parallel **/*.test.js",
+    "test:cov": "npx nyc npx mocha -r --parallel **/*.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.7",
+    "chalk": "^5.2.0",
+    "chalk-table": "^1.0.2",
+    "draftlog": "^1.0.13",
+    "mocha": "^10.2.0",
+    "nyc": "^15.1.0",
+    "sinon": "^15.1.0"
+  }
+}
